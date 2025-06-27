@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/style.css" />
+
+<div class="main-content">
+  <div style="display: flex; ">
+      <h2>Your Library</h2>
+      <a href="/" style="margin-top: 1.7rem; margin-left: 3rem;">Home</a>
+  </div>
+  <button class="badge" type="submit"><a href="/songs/new">Add songs</a></button>
+  <div class="cards-container">
+    <% songs.forEach(song => { %>
+      <div class="card">
+        <img src="<%= song.image || '/assets/song.jpg' %>" class="card-img" />
+        <p class="card-title"><b><%= song.name %></b></p>
+        <p class="card-info"><%= song.artist %> • <%= song.country %> • <%= song.duration %></p>
+        <form action="/songs/<%= song._id %>?_method=DELETE" method="post">
+            <button class="badge dark-badge" style="margin-top: 0.7rem; cursor: pointer;">Delete</button>
+        </form>
+      </div>
+    <% }) %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/style.css" />
+
+<button class="badge aaryan" type="submit"><a href="/">Home</a></button>
+<div class="cards-container" style="margin: 1rem;">
+  <% if (globalSongs && globalSongs.length > 0) { %>
+    <% globalSongs.forEach(song => { %>
+      <div class="card">
+        <img src="<%= song.image %>" class="card-img" />
+        <p class="card-title"><%= song.name %></p>
+        <p class="card-info"><%= song.artist %> • <%= song.country %> • <%= song.duration %></p>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p style="color: white; margin: 1rem;">No songs found in Global category.</p>
+  <% } %>
+</div>

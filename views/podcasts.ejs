@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/style.css" />
+<style>
+  .aaryan{
+    margin-top: 1rem !important;
+  }
+  .echo{
+    width: 20%;
+  }
+</style>
+
+<div class="main">
+  <!-- Sidebar if needed -->
+  <div class="sidebar echo">
+    <div class="nav">
+      <div class="nav-option" style="opacity: 1;">
+        <i class="fa-solid fa-house"></i>
+        <a href="/">Home</a>
+      </div>
+      <div class="nav-option">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#">Search</a>
+      </div>
+    </div>
+    <div class="library">
+      <div class="options">
+        <div class="lib-option nav-option">
+          <img src="/assets/library_icon.png" />
+          <a href="/library">Your Library</a>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div style="display: flex; gap: 3rem;">
+      <h1 style="margin-top: 1rem; margin-left: 1rem;">Browse Podcasts</h1>
+      <button class="badge aaryan" type="submit"><a href="/podcast/new">Create podcast</a></button>
+      <a href="/" style="margin-top: 1.4rem; margin-left: 1.6rem;">Home</a>
+    </div>
+
+    <div class="cards-container">
+      <% podcasts.forEach(p => { %>
+        <div class="card">
+          <img src="<%= p.image || '/assets/song.jpg' %>" class="card-img" />
+          <p class="card-title"><%= p.title %></p>
+          <p class="card-info"><%= p.artist %></p>
+          <p class="card-info"><%= p.description %></p>
+          <form action="/podcasts/<%= p._id %>?_method=DELETE" method="POST">
+            <button class="badge dark-badge" style="margin-top: 0.7rem; cursor: pointer;">Delete</button>
+          </form>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+  <!-- Music Player if needed -->
+  <div class="music-player">
+    <!-- ...copy your existing music player HTML here... -->
+  </div>
+</div>

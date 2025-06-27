@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Songs</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="main-content">
+    <div style="display: flex;">
+    <h2 style="margin-top: 1rem;">Search Songs</h2>
+    <a href="/" style="margin-top: 1.3rem; margin-left: 3rem;">Home</a>
+    </div>
+
+    <form action="/search" method="GET" style="margin: 1rem 0;">
+      <input type="text" name="q" placeholder="Search by name or artist..." class="badge" style="width: 300px;" />
+      <button type="submit" class="badge dark-badge">Search</button>
+    </form>
+
+    <div class="cards-container">
+      <% if (songs && songs.length > 0) { %>
+        <% songs.forEach(song => { %>
+          <div class="card">
+            <img src="<%= song.image || '/assets/song.jpg' %>" class="card-img" />
+            <p class="card-title"><%= song.name %></p>
+            <p class="card-info"><%= song.artist %> • <%= song.country %> • <%= song.duration %></p>
+          </div>
+        <% }) %>
+      <% } else if (songs) { %>
+        <p>No songs found.</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>
