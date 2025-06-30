@@ -7,6 +7,8 @@ const audioMap = {
   "Qatal": "/audios/qatal.mp3",
   "Akhiyaan Gulaab": "/audios/akhiyaan-gulaab.mp3",
   "I wanna be yours": "/audios/i-wanna-be-yours.mp3",
+  "Le Le Mazaa Le": "/audios/le-le-mazaa-le.mp3",
+  "Party All Night":"/audios/party-all-night.mp3",
   "Top Songs Global": "/audios/diet-mountain-dew.mp3",
   "Top Songs India": "/audios/chuttamalle.mp3",
   "Viral 50 - Global": "/audios/isq-risk.mp3",
@@ -15,7 +17,8 @@ const audioMap = {
   // 🎤 Popular Artist Tracks
   "Arijit Singh": "/audios/arijit-singh-song.mp3",
   "Vishal Mishra": "/audios/vishal-mishra-song.mp3",
-  "Rahat Ali Khan": "/audios/rahat-ali-khan-song.mp3"
+  "Rahat Ali Khan": "/audios/rahat-ali-khan-song.mp3",
+  "DJ Orbital": "/audios/dj-orbital-song.mp3"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
