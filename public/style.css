@@ -7,7 +7,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: black;
+  background-color: rgb(58, 58, 58);
   color: white;
   overflow-x: hidden; /* ✅ only block horizontal scroll */
   min-height: 100vh;  /* ✅ allow scroll when content is taller */
@@ -25,13 +25,13 @@ html, body {
 }
 
 .sidebar{
-    background-color: black;
+    background-color: rgb(59, 54, 54);
     width: 340px;
     border-radius: 1rem; /*1rem=16px*/
     margin-right: 0.5rem;
 }
 .main-content{
-    background-color: #121212;
+    background-color: #312d2d;
     flex: 1;
     border-radius: 1rem;
     overflow-y: auto;
@@ -47,7 +47,7 @@ html, body {
 }
 
 .music-player{
-    background-color: black;
+    background-color: rgb(75, 73, 73);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -109,7 +109,7 @@ a{
     opacity: 1;
 }
 .box{
-    background-color: #232323;
+    background-color: #3c3b3b;
     height: 8.5rem;
     border-radius: 0.8rem;
     margin: 0.75rem 0 1.75rem 0;
@@ -127,7 +127,7 @@ a{
     opacity: 0.9;
 }
 .badge{
-    background-color: white;
+    background-color: rgb(252, 237, 153);
     border: none;
     border-radius: 100px;
     padding: 0.25rem 1rem;
