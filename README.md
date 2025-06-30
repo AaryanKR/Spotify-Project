@@ -1,11 +1,11 @@
-# Spotify-Project
+# Santraj-Music_player
 A FullStack Web Development project.
 
 🚀 Just launched my Spotify Clone 🎧 – built from scratch!
 
-🌐 Live Demo / Website link : https://spotify-project-nzo5.onrender.com
+🌐 Live Demo / Website link : https://santraj-music.onrender.com
 💻 GitHub Link : https://github.com/AaryanKR
-💻 GitHub Repo : https://github.com/AaryanKR/Spotify-Project
+💻 GitHub Repo : https://github.com/AaryanKR/Santraj-Music_player
 
 🛠️ Tech Stack:
 
